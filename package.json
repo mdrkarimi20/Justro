@@ -1,0 +1,16 @@
+{
+    "name": "justro",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "aos": "^2.3.4"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "watch": "node-sass -o css scss -w",
+        "s": "sass main.scss main.css"
+    },
+    "author": "",
+    "license": "ISC"
+}

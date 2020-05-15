@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?tcy2qm');
+  src:  url('fonts/icomoon.eot?tcy2qm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tcy2qm') format('truetype'),
+    url('fonts/icomoon.woff?tcy2qm') format('woff'),
+    url('fonts/icomoon.svg?tcy2qm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_didani:before {
+  content: "\e900";
+}
+.icon-icon_restaurant:before {
+  content: "\e901";
+}
+.icon-icon_hotel:before {
+  content: "\e902";
+}
+.icon-icon_fly:before {
+  content: "\e903";
+}
+.icon-icon_nearme:before {
+  content: "\e904";
+}
+.icon-icon_favorites:before {
+  content: "\e905";
+}
+.icon-battery:before {
+  content: "\e908";
+}
+.icon-signal:before {
+  content: "\e906";
+}
+.icon-wifi:before {
+  content: "\e907";
+}
+.icon-download:before {
+  content: "\e909";
+}
+.icon-dry-clean:before {
+  content: "\e90a";
+}
+.icon-envelope:before {
+  content: "\e90b";
+}
+.icon-google-play:before {
+  content: "\e90c";
+}
+.icon-left-arrow:before {
+  content: "\e90d";
+}
+.icon-logotype-1:before {
+  content: "\e90e";
+}
+.icon-logotype:before {
+  content: "\e90f";
+}
+.icon-loupe:before {
+  content: "\e910";
+}
+.icon-menu:before {
+  content: "\e911";
+}
+.icon-oval:before {
+  content: "\e912";
+}
+.icon-telephone:before {
+  content: "\e913";
+}
+.icon-twitter:before {
+  content: "\e914";
+}
