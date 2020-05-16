@@ -9,9 +9,22 @@ $color-Fifth: #333333;
 }
 
 %word-justro {
-    font-size: 24px;
+    font-size: 20px;
     font-family: shabnam-bold;
     color: $color-primary;
+}
+
+%justro {
+    @extend %flex;
+    justify-content: center;
+    position: absolute;
+    .word-justro {
+        @extend %word-justro;
+    }
+    .justro-picture {
+        font-size: 60px;
+        color: $color-primary;
+    }
 }
 
 @font-face {
@@ -102,7 +115,13 @@ body {
 }
 
 @media (min-width:992px) {
+    #navBar {
+        position: relative;
+        right: 130px;
+    }
     #logo_Bg {
+        position: relative;
+        right: 25px;
         img {
             width: 406px;
             height: 219px;
@@ -110,73 +129,123 @@ body {
     }
 }
 
+@media (min-width:1100px) {
+    #navBar {
+        position: relative;
+        right: 50px;
+    }
+    #logo_Bg {
+        margin-left: 260px;
+    }
+}
+
+@media (min-width:1200px) {
+    #navBar {
+        position: relative;
+        right: 0;
+    }
+}
+
 #justro {
-    @extend %flex;
-    justify-content: center;
-    position: absolute;
-    .word-justro {
-        @extend %word-justro;
-    }
-    .justro-picture {
-        font-size: 60px;
-        color: $color-primary;
-    }
+    @extend %justro;
 }
 
 @media (min-width:360px) {
-    .word-justro {
-        margin-left: 20px;
-        margin-top: 73px;
-    }
-    .justro-picture {
-        margin-right: 160px;
-        margin-top: 65px;
+    #justro {
+        bottom: 21px !important;
+        right: 165px !important;
+        .word-justro {
+            right: 80px !important;
+            bottom: 40px !important;
+        }
     }
 }
 
-@media (min-width:480px) {
-    .word-justro {
-        margin-right: 5px;
-        margin-top: 79px;
-    }
-    .justro-picture {
-        margin-right: 140px;
-        margin-top: 71px;
+@media (min-width:406px) {
+    #justro {
+        bottom: 45px !important;
+        right: 222px !important;
+        .word-justro {
+            right: 80px !important;
+            bottom: 40px !important;
+        }
     }
 }
 
 @media (min-width:576px) {
-    .justro-picture {
-        margin-right: 20px;
-        margin-top: 71px;
+    #justro {
+        bottom: 72px !important;
+        right: -18px !important;
+        .word-justro {
+            right: 24px !important;
+            top: 6px !important;
+        }
     }
 }
 
-@media (min-width:670px) {
-    .word-justro {
-        margin-left: 50px;
-        margin-top: 79px;
+@media (min-width:650px) {
+    #justro {
+        bottom: 72px !important;
+        right: -72px !important;
+        .word-justro {
+            right: 24px !important;
+            top: 6px !important;
+        }
+    }
+}
+
+@media (min-width:715px) {
+    #justro {
+        bottom: 80px !important;
+        right: -100px !important;
+        .word-justro {
+            right: 24px !important;
+            top: 6px !important;
+        }
     }
 }
 
 @media (min-width:768px) {
-    .word-justro {
-        margin-left: 139px;
-        margin-bottom: 0;
-        margin-top: 72px;
-        margin-right: 0;
+    #justro {
+        bottom: 70px !important;
+        left: 110px !important;
     }
 }
 
 @media (min-width:830px) {
-    .justro-picture {
-        margin-right: -19px;
+    #justro {
+        left: 0 !important;
+        right: -150 !important;
+        .word-justro {
+            right: -52px !important;
+            top: 6px !important;
+        }
+        .justro-picture {
+            left: 46px;
+        }
     }
 }
 
-@media (min-width:900px) {
-    .justro-picture {
-        margin-right: -50px;
+@media (min-width:930px) {
+    #justro {
+        left: 0 !important;
+        right: -150 !important;
+    }
+}
+
+#Justro {
+    @extend %justro;
+}
+
+@media (min-width:992px) {
+    #Justro {
+        right: -20px;
+    }
+}
+
+@media (min-width:1100px) {
+    #Justro {
+        right: 0;
     }
 }
 
@@ -187,10 +256,26 @@ body {
     position: absolute;
 }
 
-#navBar {
-    font-size: 16px;
-    font-weight: 300;
-    color: $color-Fifth;
+#top {
+    align-items: flex-end;
+    justify-content: space-between;
+    #navBar {
+        font-size: 16px;
+        font-weight: 300;
+        color: $color-Fifth;
+    }
+    .download {
+        @extend %flex;
+        justify-content: center;
+        font-family: shabnam-light;
+        font-size: 18px;
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+        background-image: linear-gradient(to top, #e35325, #ff8a65);
+        color: $color-fourthary;
+    }
 }
 
 .word-travel {

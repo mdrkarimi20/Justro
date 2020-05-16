@@ -1,11 +1,20 @@
-.word-travel, #justro, #nav .nav-search, #nav .nav-justro, #bg {
+.word-travel, #top .download, #nav .nav-search, #nav .nav-justro, #bg, #Justro, #justro {
   display: flex;
   align-items: center;
 }
 
-#justro .word-justro, #nav span {
-  font-size: 24px;
+#nav span, #Justro .word-justro, #justro .word-justro {
+  font-size: 20px;
   font-family: shabnam-bold;
+  color: #007f62;
+}
+
+#Justro, #justro {
+  justify-content: center;
+  position: absolute;
+}
+#Justro .justro-picture, #justro .justro-picture {
+  font-size: 60px;
   color: #007f62;
 }
 
@@ -80,70 +89,119 @@ body {
   }
 }
 @media (min-width: 992px) {
+  #navBar {
+    position: relative;
+    right: 130px;
+  }
+
+  #logo_Bg {
+    position: relative;
+    right: 25px;
+  }
   #logo_Bg img {
     width: 406px;
     height: 219px;
   }
 }
-#justro {
-  justify-content: center;
-  position: absolute;
-}
-#justro .justro-picture {
-  font-size: 60px;
-  color: #007f62;
-}
+@media (min-width: 1100px) {
+  #navBar {
+    position: relative;
+    right: 50px;
+  }
 
+  #logo_Bg {
+    margin-left: 260px;
+  }
+}
+@media (min-width: 1200px) {
+  #navBar {
+    position: relative;
+    right: 0;
+  }
+}
 @media (min-width: 360px) {
-  .word-justro {
-    margin-left: 20px;
-    margin-top: 73px;
+  #justro {
+    bottom: 21px !important;
+    right: 165px !important;
   }
-
-  .justro-picture {
-    margin-right: 160px;
-    margin-top: 65px;
+  #justro .word-justro {
+    right: 80px !important;
+    bottom: 40px !important;
   }
 }
-@media (min-width: 480px) {
-  .word-justro {
-    margin-right: 5px;
-    margin-top: 79px;
+@media (min-width: 406px) {
+  #justro {
+    bottom: 45px !important;
+    right: 222px !important;
   }
-
-  .justro-picture {
-    margin-right: 140px;
-    margin-top: 71px;
+  #justro .word-justro {
+    right: 80px !important;
+    bottom: 40px !important;
   }
 }
 @media (min-width: 576px) {
-  .justro-picture {
-    margin-right: 20px;
-    margin-top: 71px;
+  #justro {
+    bottom: 72px !important;
+    right: -18px !important;
+  }
+  #justro .word-justro {
+    right: 24px !important;
+    top: 6px !important;
   }
 }
-@media (min-width: 670px) {
-  .word-justro {
-    margin-left: 50px;
-    margin-top: 79px;
+@media (min-width: 650px) {
+  #justro {
+    bottom: 72px !important;
+    right: -72px !important;
+  }
+  #justro .word-justro {
+    right: 24px !important;
+    top: 6px !important;
+  }
+}
+@media (min-width: 715px) {
+  #justro {
+    bottom: 80px !important;
+    right: -100px !important;
+  }
+  #justro .word-justro {
+    right: 24px !important;
+    top: 6px !important;
   }
 }
 @media (min-width: 768px) {
-  .word-justro {
-    margin-left: 139px;
-    margin-bottom: 0;
-    margin-top: 72px;
-    margin-right: 0;
+  #justro {
+    bottom: 70px !important;
+    left: 110px !important;
   }
 }
 @media (min-width: 830px) {
-  .justro-picture {
-    margin-right: -19px;
+  #justro {
+    left: 0 !important;
+    right: -150 !important;
+  }
+  #justro .word-justro {
+    right: -52px !important;
+    top: 6px !important;
+  }
+  #justro .justro-picture {
+    left: 46px;
   }
 }
-@media (min-width: 900px) {
-  .justro-picture {
-    margin-right: -50px;
+@media (min-width: 930px) {
+  #justro {
+    left: 0 !important;
+    right: -150 !important;
+  }
+}
+@media (min-width: 992px) {
+  #Justro {
+    right: -20px;
+  }
+}
+@media (min-width: 1100px) {
+  #Justro {
+    right: 0;
   }
 }
 #Header {
@@ -153,10 +211,25 @@ body {
   position: absolute;
 }
 
-#navBar {
+#top {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#top #navBar {
   font-size: 16px;
   font-weight: 300;
   color: #333333;
+}
+#top .download {
+  justify-content: center;
+  font-family: shabnam-light;
+  font-size: 18px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+  color: #ffffff;
 }
 
 .word-travel {
