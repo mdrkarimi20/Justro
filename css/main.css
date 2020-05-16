@@ -1,77 +1,125 @@
-#justro .word-justro, #nav span {
-  font-size: 1.5rem;
+#bg, #nav .nav-justro, #nav .nav-search, .word-travel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav span, #justro .word-justro {
+  font-size: 24px;
+  font-family: shabnam-bold;
   color: #007f62;
 }
 
 @font-face {
-  font-family: shabnam;
-  src: url("../fonts/Shabnam-WOL.eot"), url("../fonts/Shabnam-WOL.woff2") format("woff2"), url("../fonts/Shabnam-WOL.woff") format("woff"), url("../fonts/Shabnam-WOL.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "shabnam-bold";
+  src: url("../fonts/Shabnam-Bold-FD.ttf");
 }
+
+@font-face {
+  font-family: "shabnam-light";
+  src: url("../fonts/Shabnam-Light-FD.ttf");
+}
+
+@font-face {
+  font-family: "shabnam-medium";
+  src: url("../fonts/Shabnam-Medium-FD.ttf");
+}
+
+@font-face {
+  font-family: "shabnam-thin";
+  src: url("../fonts/Shabnam-Thin-FD.ttf");
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
   direction: rtl;
   text-align: right;
-  font-family: shabnam;
+  font-family: shabnam-light;
 }
 
 #bg {
-  height: 4369px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 
 #header {
   height: 30px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
   color: #f8f8f8;
   padding: 0;
   background-color: #007f62;
 }
+
 #header span {
-  font-size: 1rem;
+  font-size: 16px;
   margin-right: 0.4rem;
 }
 
 #nav {
   height: 80px;
-  display: flex;
-  align-items: center;
-  box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
+  -webkit-box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
+          box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
   background-color: #ffffff;
 }
+
+#logo_Bg {
+  overflow: hidden;
+  margin-left: 180px;
+}
+
+#logo_Bg img {
+  width: 400px;
+}
+
 #justro {
   width: 237px;
   height: 192px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../img/009_logo_Bg.svg");
-  background-size: cover;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
+
 #justro .justro-picture {
-  font-size: 3.5rem;
+  font-size: 72px;
   color: #007f62;
 }
 
 .word-travel {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
+
 .word-travel .better-know {
   color: #007f62;
-  font-size: 1.9rem;
+  font-size: 30px;
+  font-family: shabnam-bold;
 }
+
 .word-travel .line {
   width: 70px;
   height: 3px;
@@ -79,8 +127,9 @@ body {
   background-color: #00a680;
   float: right;
 }
+
 .word-travel .lorem {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
 }
@@ -97,5 +146,4 @@ body {
   color: brown;
   border-radius: 5px;
 }
-
 /*# sourceMappingURL=main.css.map */

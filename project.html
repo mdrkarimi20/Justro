@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/bootstrap-reboot.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./icons/style.css">
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <script src="./node_modules/aos/dist/aos.js"></script>
@@ -21,42 +21,90 @@
 </head>
 
 <body>
-    <div id="bg" class="container">
-        <div class="row">
-            <div id="header" class=col-sm-12>
+    <div id="bg" class="container-fluid">
+        <div id="header" class="row col-12 d-lg-none">
+            <div class="col-7 d-flex flex-row align-items-center p-0">
                 <span>17:19</span>
                 <span class="icon-battery"></span>
                 <span class="icon-signal"></span>
                 <span class="icon-wifi"></span>
             </div>
+            <div class="col-5"></div>
         </div>
-        <div class="row">
-            <div id="nav" class=col-sm-12>
-                <span class="icon-menu mr-2"></span>
-                <span class="h4 mt-1 col-sm-1 font-weight-bold word-justro">جاسترو</span>
-                <span class="icon-loupe ml-2"></span>
+        <div id="nav" class="row col-12 d-lg-none">
+            <div class="col-10 nav-justro">
+                <span class="icon-menu"></span>
+                <span class="h4 mt-2 mr-2 font-weight-bold word-justro">جاسترو</span>
+            </div>
+            <div class="col-2 nav-search d-flex justify-content-end">
+                <span class="icon-loupe"></span>
             </div>
         </div>
-        <div class="row">
-            <div id="justro" class=col-sm-12>
-                <span class="icon-dry-clean mr-3 col-sm-1 justro-picture"></span>
-                <span class="h4 font-weight-bold ml-1 word-justro">جاسترو</span>
+        <div id="logo_Bg" class="row col-sm-12 p-lg-0 m-lg-0 d-lg-none">
+            <img src="./img/009_logo_Bg.svg" alt="logo_Bg">
+            <div id="justro" class="row col-sm-12 d-lg-none">
+                <span class="icon-dry-clean justro-picture"></span>
+                <span class="h4 font-weight-bold ml-2 word-justro">جاسترو</span>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 word-travel">
-                <p class="h3 col-sm-12 font-weight-bold better-know">بهتر بشناسید</p>
-                <span class="col-sm-12 line"></span>
-                <p class="h6 lorem">لورم ایپسوم متن ساختگی با تولید سادگی<br>نامفهوم از صنعت چاپ و با استفاده از طراحان<br>گرافیک است. چاپگرها و متون بلکه روزنامه و<br>مجله در ستون و سطرآنچنان که لازم است و<br>برای شرایط فعلی تکنولوژی</p>
+        <div id="Header" class="row col-12">
+            <div class="col-4 d-none d-lg-block">
+                <img src="./img/009_logo_Bg.svg" alt="logo_Bg" class="Header-logo" width=300px>
             </div>
-            <div>
-                <img src="./img/002_slide1_bg.png" class="slide1_bg" alt="slide1_bg">
-                <img src="./img/001_slide1_woman_view.svg" class="col-sm-12 woman_view" alt="woman_view">
-                <span id="circle" class="icon-dry-clean"></span>
-                <span id="circle" class="icon-dry-clean"></span>
-                <span id="Round-rectangle"></span>
+            <div class="col-3 d-none d-lg-block">
+                <img src="./img/010_header_wave.png" alt="header_wave" class="Header-wave d-flex justify-content-end" width=350px>
             </div>
         </div>
+        <div class="row col-lg-12 d-none d-lg-block">
+            <div id="justro" class="col-lg-4">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                    <span class="icon-dry-clean col-lg-1 mt-3 justro-picture p-0 m-0"></span>
+                    <span class="h4 font-weight-bold col-3 col-sm-3 col-lg-1 word-justro mb-2 mt-4 ml-4 mr-4">جاسترو</span>
+                </div>
+            </div>
+            <div id="navBar" class="col-lg-9 mt-3 mr-2">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">صفحه اصلی<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ایده ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ویژگی ها</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">در باره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">همکاری با ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">تماس با ما</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+        <div class="col-sm-12 word-travel">
+            <p class="h3 col-sm-12 font-weight-bold better-know">بهتر بشناسید</p>
+            <span class="col-sm-12 line"></span>
+            <p class="h6 lorem">لورم ایپسوم متن ساختگی با تولید سادگی<br>نامفهوم از صنعت چاپ و با استفاده از طراحان<br>گرافیک است. چاپگرها و متون بلکه روزنامه و<br>مجله در ستون و سطرآنچنان که لازم است و<br>برای شرایط فعلی تکنولوژی</p>
+        </div>
+        <div>
+            <img src="./img/002_slide1_bg.png" class="slide1_bg" alt="slide1_bg">
+            <img src="./img/001_slide1_woman_view.svg" class="col-sm-12 woman_view" alt="woman_view">
+            <span id="circle" class="icon-dry-clean"></span>
+            <span id="circle" class="icon-dry-clean"></span>
+            <span id="Round-rectangle"></span>
+        </div>-->
+    </div>
     </div>
 
     <script src="./js/bootstrap.min.js "></script>

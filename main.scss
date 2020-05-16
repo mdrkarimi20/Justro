@@ -1,0 +1,230 @@
+$color-primary: #007f62;
+$color-secondary: #00a680;
+$color-tertiary: #f8f8f8;
+$color-fourthary: #ffffff;
+$color-Fifth: #333333;
+%flex {
+    display: flex;
+    align-items: center;
+}
+
+%word-justro {
+    font-size: 24px;
+    font-family: shabnam-bold;
+    color: $color-primary;
+}
+
+@font-face {
+    font-family: "shabnam-bold";
+    src: url("../fonts/Shabnam-Bold-FD.ttf");
+}
+
+@font-face {
+    font-family: "shabnam-light";
+    src: url("../fonts/Shabnam-Light-FD.ttf");
+}
+
+@font-face {
+    font-family: "shabnam-medium";
+    src: url("../fonts/Shabnam-Medium-FD.ttf");
+}
+
+@font-face {
+    font-family: "shabnam-thin";
+    src: url("../fonts/Shabnam-Thin-FD.ttf");
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: shabnam-light;
+}
+
+#bg {
+    @extend %flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    height: 30px;
+    color: $color-tertiary;
+    padding: 0;
+    background-color: $color-primary;
+    span {
+        font-size: 16px;
+        margin-right: 0.4rem;
+    }
+}
+
+#nav {
+    height: 80px;
+    box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
+    background-color: $color-fourthary;
+    span {
+        @extend %word-justro;
+    }
+    .nav-justro {
+        @extend %flex;
+    }
+    .nav-search {
+        @extend %flex;
+    }
+}
+
+#logo_Bg {
+    overflow: hidden;
+    margin-left: 210px;
+    img {
+        width: 400px;
+    }
+}
+
+@media (min-width:360px) {
+    #logo_Bg {
+        margin-left: 260px;
+    }
+}
+
+@media (min-width:576px) {
+    #logo_Bg {
+        margin-left: 260px;
+    }
+}
+
+@media (min-width:992px) {
+    #logo_Bg {
+        img {
+            width: 406px;
+            height: 219px;
+        }
+    }
+}
+
+#justro {
+    @extend %flex;
+    justify-content: center;
+    position: absolute;
+    .word-justro {
+        @extend %word-justro;
+    }
+    .justro-picture {
+        font-size: 60px;
+        color: $color-primary;
+    }
+}
+
+@media (min-width:360px) {
+    .word-justro {
+        margin-left: 20px;
+        margin-top: 73px;
+    }
+    .justro-picture {
+        margin-right: 160px;
+        margin-top: 65px;
+    }
+}
+
+@media (min-width:480px) {
+    .word-justro {
+        margin-right: 5px;
+        margin-top: 79px;
+    }
+    .justro-picture {
+        margin-right: 140px;
+        margin-top: 71px;
+    }
+}
+
+@media (min-width:576px) {
+    .justro-picture {
+        margin-right: 20px;
+        margin-top: 71px;
+    }
+}
+
+@media (min-width:670px) {
+    .word-justro {
+        margin-left: 50px;
+        margin-top: 79px;
+    }
+}
+
+@media (min-width:768px) {
+    .word-justro {
+        margin-left: 139px;
+        margin-bottom: 0;
+        margin-top: 72px;
+        margin-right: 0;
+    }
+}
+
+@media (min-width:830px) {
+    .justro-picture {
+        margin-right: -19px;
+    }
+}
+
+@media (min-width:900px) {
+    .justro-picture {
+        margin-right: -50px;
+    }
+}
+
+#Header {
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+    position: absolute;
+}
+
+#navBar {
+    font-size: 16px;
+    font-weight: 300;
+    color: $color-Fifth;
+}
+
+.word-travel {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: start;
+    .better-know {
+        color: $color-primary;
+        font-size: 30px;
+        font-family: shabnam-bold;
+    }
+    .line {
+        width: 70px;
+        height: 3px;
+        border-radius: 1.5px;
+        background-color: $color-secondary;
+        float: right;
+    }
+    .lorem {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+}
+
+.woman_view {
+    height: 350px;
+}
+
+#circle {
+    color: gray;
+}
+
+#Round-rectangle {
+    color: brown;
+    border-radius: 5px;
+}
