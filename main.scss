@@ -3,6 +3,8 @@ $color-secondary: #00a680;
 $color-tertiary: #f8f8f8;
 $color-fourthary: #ffffff;
 $color-Fifth: #333333;
+$color-sixth: #bdbdbd;
+$color-seventh: #ff7043;
 %flex {
     display: flex;
     align-items: center;
@@ -278,38 +280,83 @@ body {
     }
 }
 
-.word-travel {
+#word-travel {
     @extend %flex;
-    flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
+    margin-top: 30px;
     .better-know {
         color: $color-primary;
         font-size: 30px;
         font-family: shabnam-bold;
     }
     .line {
-        width: 70px;
         height: 3px;
+        width: 70px;
         border-radius: 1.5px;
         background-color: $color-secondary;
         float: right;
     }
     .lorem {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 300;
         line-height: 1.5;
     }
 }
 
-.woman_view {
-    height: 350px;
+@media (min-width:568px) {
+    #bg_woman-mobile {
+        width: 280px;
+    }
+}
+
+@media (min-width:768px) {
+    #bg_woman-mobile {
+        width: 300px;
+    }
 }
 
 #circle {
-    color: gray;
+    font-size: 12px;
+    color: $color-sixth;
 }
 
 #Round-rectangle {
-    color: brown;
-    border-radius: 5px;
+    width: 24px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: $color-seventh;
+}
+
+#box {
+    background-color: white;
+    opacity: 1;
+}
+
+#word-Travel {
+    width: 500px;
+    .better-know {
+        color: $color-primary;
+        font-size: 30px;
+        font-family: shabnam-bold;
+    }
+    .line {
+        height: 3px;
+        width: 70px;
+        border-radius: 1.5px;
+        background-color: $color-secondary;
+        float: right;
+    }
+    .lorem {
+        font-size: 14px;
+        line-height: 1.5;
+        width: 500px;
+    }
+}
+
+@media (min-width:568px) {
+    #word-Tranvel {
+        .better-know {
+            width: 300px;
+        }
+    }
 }
