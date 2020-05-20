@@ -68,6 +68,7 @@ body {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 #header {
@@ -290,7 +291,7 @@ body {
     margin-top: 30px;
     .better-know {
         color: $color-primary;
-        font-size: 30px;
+        font-size: 25px;
         font-family: shabnam-bold;
     }
     .line {
@@ -301,7 +302,7 @@ body {
         float: right;
     }
     .lorem {
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 300;
         line-height: 1.5;
     }
@@ -309,7 +310,7 @@ body {
 
 #bg_woman-mobile {
     position: relative;
-    left: 20px;
+    left: 29px;
 }
 
 @media (min-width:568px) {
@@ -343,7 +344,6 @@ body {
 }
 
 #word-Travel {
-    width: 500px;
     .better-know {
         color: $color-primary;
         font-size: 30px;
@@ -359,7 +359,6 @@ body {
     .lorem {
         font-size: 14px;
         line-height: 1.5;
-        width: 500px;
     }
 }
 
@@ -413,5 +412,126 @@ body {
     }
     100% {
         background-position-x: -1000px;
+    }
+}
+
+#center {
+    .icon-center {
+        @extend %flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 25px;
+        overflow-x: scroll;
+    }
+}
+
+.line2 {
+    width: 2px;
+    height: 600px;
+    background-color: $color-secondary;
+    z-index: -10;
+    position: absolute;
+}
+
+.box-circle {
+    padding: 1px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, #00a680, #00f4bd);
+    .circle2 {
+        @extend %flex;
+        justify-content: center;
+        width: 63px;
+        height: 63px;
+        border-radius: 50%;
+        background-color: white;
+        span {
+            font-size: 30px;
+            opacity: 0.9;
+            color: $color-secondary;
+        }
+    }
+}
+
+.phone {
+    @extend %flex;
+    justify-content: center;
+    .sub-phone {
+        position: relative;
+        img {
+            position: absolute;
+            bottom: 45px;
+            left: 28px;
+        }
+    }
+}
+
+#word-center {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-right: 150px;
+    .better-know {
+        color: $color-primary;
+        font-size: 25px;
+        font-family: shabnam-bold;
+    }
+    .lorem {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.5;
+        width: 300px;
+    }
+}
+
+@media (min-width:568px) {
+    #word-center {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        .better-know {
+            width: 500px;
+        }
+        .lorem {
+            width: 500px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    #word-center {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        .better-know {
+            width: 600px;
+        }
+        .lorem {
+            width: 600px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    #word-center {
+        padding-right: 6rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width:992px) {
+    #word-Tranvel {
+        .better-know {
+            width: 500px;
+        }
+        .lorem {
+            width: 500px;
+        }
+    }
+}
+
+@media (min-width:360px) {
+    #word-Tranvel {
+        width: 500px;
     }
 }
