@@ -1,4 +1,4 @@
-.phone, .box-circle .circle2, #center .icon-center, #icon-slider, #word-travel, #top .download, #nav .nav-search, #nav .nav-justro, #bg, #Justro, #justro {
+#Download2 .Download-botton .download-end, #Download2 .Download2-icon, #download2 .download-end, #download2, .phone, .box-circle .circle2, #center .icon-center, #icon-slider, #word-travel, #top .download, #nav .nav-search, #nav .nav-justro, #bg, #Justro, #justro {
   display: flex;
   align-items: center;
 }
@@ -7,6 +7,12 @@
   font-size: 20px;
   font-family: shabnam-bold;
   color: #007f62;
+}
+
+#Download2 .method-download, #Download2 .word-number-phone, #download2 .method-download, #download2 .word-number-phone, #word-center .lorem, #word-Travel .lorem, #word-travel .lorem {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 #Justro, #justro {
@@ -221,7 +227,7 @@ body {
   justify-content: space-between;
 }
 #top #navBar {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 300;
   color: #333333;
 }
@@ -253,12 +259,6 @@ body {
   background-color: #00a680;
   float: right;
 }
-#word-travel .lorem {
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
 #bg_woman-mobile {
   position: relative;
   left: 29px;
@@ -303,11 +303,6 @@ body {
   background-color: #00a680;
   float: right;
 }
-#word-Travel .lorem {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
 @media (min-width: 568px) {
   #word-Tranvel .better-know {
     width: 300px;
@@ -413,9 +408,6 @@ body {
   font-family: shabnam-bold;
 }
 #word-center .lorem {
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 1.5;
   width: 300px;
 }
 
@@ -463,6 +455,125 @@ body {
 @media (min-width: 360px) {
   #word-Tranvel {
     width: 500px;
+  }
+}
+#download2 {
+  width: 330px;
+  height: 770px;
+  border-radius: 15px;
+  box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#download2 .word-aplication {
+  font-size: 24px;
+  text-align: center;
+  color: #007f62;
+}
+#download2 .word-number-phone {
+  text-align: center;
+}
+#download2 .number-phone {
+  width: 290px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #eeeeee;
+  background-color: #fafafa;
+}
+#download2 .download {
+  width: 140px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+  color: #ffffff;
+}
+#download2 .method-download {
+  text-align: center;
+}
+#download2 .download-end {
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+  background-image: linear-gradient(to top, #00a680, #00f4bd);
+  color: #ffffff;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  font-size: 13px;
+  font-family: shabnam-bold;
+}
+#download2 .download-end span {
+  font-size: 13px;
+}
+
+#Download2 {
+  width: 970px;
+  height: 300px;
+  border-radius: 30px;
+  box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
+  display: flex;
+}
+#Download2 .Download2-icon {
+  justify-content: center;
+}
+#Download2 .side-Download2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#Download2 .word-aplication {
+  font-size: 24px;
+  text-align: center;
+  color: #007f62;
+}
+#Download2 .word-number-phone {
+  text-align: center;
+}
+#Download2 .number-phone {
+  width: 290px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #eeeeee;
+  background-color: #fafafa;
+  position: relative;
+}
+#Download2 .download {
+  width: 140px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+  color: #ffffff;
+  position: absolute;
+  left: 103px;
+}
+#Download2 .method-download {
+  text-align: center;
+}
+#Download2 .Download-botton {
+  position: relative;
+}
+#Download2 .Download-botton .download-end {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+  background-image: linear-gradient(to top, #00a680, #00f4bd);
+  color: #ffffff;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  font-size: 13px;
+  font-family: shabnam-bold;
+}
+#Download2 .Download-botton .download-end span {
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  #Download2 {
+    width: 1100px;
   }
 }
 

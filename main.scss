@@ -16,6 +16,12 @@ $color-seventh: #ff7043;
     color: $color-primary;
 }
 
+%word {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
 %justro {
     @extend %flex;
     justify-content: center;
@@ -267,7 +273,7 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     #navBar {
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 300;
         color: $color-Fifth;
     }
@@ -302,9 +308,7 @@ body {
         float: right;
     }
     .lorem {
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 1.5;
+        @extend %word;
     }
 }
 
@@ -357,8 +361,7 @@ body {
         float: right;
     }
     .lorem {
-        font-size: 14px;
-        line-height: 1.5;
+        @extend %word;
     }
 }
 
@@ -476,9 +479,7 @@ body {
         font-family: shabnam-bold;
     }
     .lorem {
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 1.5;
+        @extend %word;
         width: 300px;
     }
 }
@@ -533,5 +534,133 @@ body {
 @media (min-width:360px) {
     #word-Tranvel {
         width: 500px;
+    }
+}
+
+#download2 {
+    width: 330px;
+    height: 770px;
+    border-radius: 15px;
+    box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @extend %flex;
+    .word-aplication {
+        font-size: 24px;
+        text-align: center;
+        color: $color-primary;
+    }
+    .word-number-phone {
+        @extend %word;
+        text-align: center;
+    }
+    .number-phone {
+        width: 290px;
+        height: 50px;
+        border-radius: 25px;
+        border: solid 1px #eeeeee;
+        background-color: #fafafa;
+    }
+    .download {
+        width: 140px;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+        background-image: linear-gradient(to top, #e35325, #ff8a65);
+        color: $color-fourthary;
+    }
+    .method-download {
+        text-align: center;
+        @extend %word;
+    }
+    .download-end {
+        width: 160px;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+        background-image: linear-gradient(to top, #00a680, #00f4bd);
+        color: $color-fourthary;
+        @extend %flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        font-size: 13px;
+        font-family: shabnam-bold;
+        span {
+            font-size: 13px;
+        }
+    }
+}
+
+#Download2 {
+    width: 970px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
+    display: flex;
+    .Download2-icon {
+        @extend %flex;
+        justify-content: center;
+    }
+    .side-Download2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .word-aplication {
+        font-size: 24px;
+        text-align: center;
+        color: $color-primary;
+    }
+    .word-number-phone {
+        @extend %word;
+        text-align: center;
+    }
+    .number-phone {
+        width: 290px;
+        height: 50px;
+        border-radius: 25px;
+        border: solid 1px #eeeeee;
+        background-color: #fafafa;
+        position: relative;
+    }
+    .download {
+        width: 140px;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+        background-image: linear-gradient(to top, #e35325, #ff8a65);
+        color: $color-fourthary;
+        position: absolute;
+        left: 103px;
+    }
+    .method-download {
+        text-align: center;
+        @extend %word;
+    }
+    .Download-botton {
+        position: relative;
+        .download-end {
+            position: absolute;
+            width: 160px;
+            height: 50px;
+            border-radius: 25px;
+            box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+            background-image: linear-gradient(to top, #00a680, #00f4bd);
+            color: $color-fourthary;
+            @extend %flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            font-size: 13px;
+            font-family: shabnam-bold;
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    #Download2 {
+        width: 1100px;
     }
 }
