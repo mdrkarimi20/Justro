@@ -141,7 +141,7 @@ body {
 @media (min-width:1100px) {
     #navBar {
         position: relative;
-        right: 50px;
+        right: 118px;
     }
     #logo_Bg {
         margin-left: 260px;
@@ -151,7 +151,7 @@ body {
 @media (min-width:1200px) {
     #navBar {
         position: relative;
-        right: 0;
+        right: 104px;
     }
 }
 
@@ -248,13 +248,13 @@ body {
 
 @media (min-width:992px) {
     #Justro {
-        right: -20px;
+        right: -10px;
     }
 }
 
 @media (min-width:1100px) {
     #Justro {
-        right: 0;
+        right: 7px;
     }
 }
 
@@ -369,6 +369,22 @@ body {
     #word-Tranvel {
         .better-know {
             width: 300px;
+        }
+    }
+}
+
+@media (max-width:620px) {
+    #word-Travel {
+        .lorem {
+            width: 300px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    #word-Travel {
+        .lorem {
+            width: 600px;
         }
     }
 }
@@ -537,6 +553,52 @@ body {
     }
 }
 
+#Wave-center {
+    position: relative;
+    top: 191px;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    .Bg-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        background-image: url("./img/new-wave.jpg");
+        background-size: cover;
+    }
+    .Bg-wave.Wave1 {
+        animation: animate 20s linear infinite;
+        z-index: 100;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+    }
+    .Bg-wave.Wave2 {
+        animation: animate2 10s linear infinite;
+        z-index: 50;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1500px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
 #download2 {
     width: 330px;
     height: 770px;
@@ -560,6 +622,11 @@ body {
         border-radius: 25px;
         border: solid 1px #eeeeee;
         background-color: #fafafa;
+    }
+     ::placeholder {
+        color: black;
+        display: flex;
+        justify-content: center;
     }
     .download {
         width: 140px;
@@ -597,6 +664,9 @@ body {
     border-radius: 30px;
     box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
     display: flex;
+    position: relative;
+    bottom: 109px;
+    z-index: 100;
     .Download2-icon {
         @extend %flex;
         justify-content: center;
@@ -622,6 +692,7 @@ body {
         border: solid 1px #eeeeee;
         background-color: #fafafa;
         position: relative;
+        left: 47px;
     }
     .download {
         width: 140px;
@@ -631,7 +702,7 @@ body {
         background-image: linear-gradient(to top, #e35325, #ff8a65);
         color: $color-fourthary;
         position: absolute;
-        left: 103px;
+        left: 130px;
     }
     .method-download {
         text-align: center;
@@ -662,5 +733,39 @@ body {
 @media (min-width:1200px) {
     #Download2 {
         width: 1100px;
+    }
+}
+
+#Travel-readiness {
+    color: $color-fourthary;
+    @extend %flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url("./img/dark_image.jpg");
+    height: 350px;
+    .Travel {
+        font-size: 24px;
+        text-align: center;
+        z-index: 100;
+    }
+    .Travel-lorem {
+        @extend %word;
+        z-index: 100;
+    }
+    .icon-travel {
+        width: 160px;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25), 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+        background-image: linear-gradient(to top, #e35325, #ff8a65);
+        z-index: 100;
+        color: $color-fourthary;
+        @extend %flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-family: shabnam-light !important;
+        span {
+            font-size: 16px;
+        }
     }
 }

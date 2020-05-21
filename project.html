@@ -60,9 +60,9 @@
                 <span class="icon-dry-clean col-lg-1 mt-3 justro-picture p-0 m-0"></span>
                 <span class="h4 font-weight-bold col-3 col-sm-3 col-lg-1 word-justro mb-2 mt-4 ml-4 mr-4">جاسترو</span>
             </div>
-            <div id="navBar" class="col-lg-9 mt-3">
+            <div id="navBar" class="col-lg-9 mt-3 pl-5">
                 <nav class="navbar navbar-expand-lg">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">صفحه اصلی<span class="sr-only">(current)</span></a>
@@ -96,7 +96,7 @@
         </div>
 
         <div class="row col-12 col-lg-12 d-flex  overflow-hidden">
-            <div id="word-Travel" class="col-lg-4 col-12 col-sm-6 flex-column">
+            <div id="word-Travel" class="col-lg-4 col-12 col-sm-6 p-sm-3 p-lg-5 flex-column">
                 <p class="h3 font-weight-bold better-know p-2">بهتر بشناسید</p>
                 <span class="line mr-2"></span>
                 <p class="h6 lorem p-2">لورم ایپسوم متن ساختگی با تولید سادگی<br>نامفهوم از صنعت چاپ و با استفاده از طراحان<br>گرافیک است. چاپگرها و متون بلکه روزنامه و<br>مجله در ستون و سطرآنچنان که لازم است و<br>برای شرایط فعلی تکنولوژی</p>
@@ -177,9 +177,8 @@
                     نیاز و کاربردهای متنوع با هدف بهبود<br>ابزارهای کاربردی می باشد.<br>
             </div>
         </div>
-        <div id="Wave d-none d-lg-flex">
-            <div class="bg-wave wave1"></div>
-            <div class="bg-wave wave2"></div>
+        <div id="Wave-center" class="d-none d-lg-flex">
+            <div class="Bg-wave Wave1"></div>
         </div>
         <div id="box" class="row d-lg-none">
             <div class="col-lg-12 p-3"></div>
@@ -190,7 +189,7 @@
                 <p class="h4 word-aplication">دانلود اپلیکیشن جاسترو</p>
                 <p class="h6 word-number-phone">با وارد کردن شماره همراه خود در کادر پایین<br> لینک دانلود اپلیکیشن رو دریافت کنید</p>
                 <div>
-                    <button type="button" class="btn btn-secondary btn-lg number-phone"></button>
+                    <input type="number" name="number-phone" placeholder="09" class="btn btn-secondary btn-lg number-phone">
                 </div>
                 <div>
                     <button type="button" class="btn download">دانلود</button>
@@ -225,9 +224,8 @@
                     <p class="h4 word-aplication">دانلود اپلیکیشن جاسترو</p>
                     <p class="h6 word-number-phone">شما می‌تونید با وارد کردن شماره همراه خود در کارد پایین، لینک دانلود اپلیکیشن رو دریافت کنید</p>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-secondary btn-lg number-phone">
-                            <button type="button" class="btn download">دانلود</button>
-                        </button>
+                        <input type="number" name="number-phone" placeholder="09" class="btn btn-secondary btn-lg number-phone">
+                        <button type="button" class="btn download">دانلود</button>
                     </div>
                     <p class="method-download">یا از یکی از روشهای زیر اپلیکیشن جاسترو رو دانلود کنید</p>
                     <div class="row Download-botton">
@@ -245,7 +243,22 @@
             </div>
         </div>
         <div id="box" class="row d-none d-lg-flex">
-            <div class="col-lg-12 p-3"></div>
+            <div class="col-lg-12 p-5"></div>
+        </div>
+        <div class="row d-flex d-lg-none">
+            <div id="Travel-readiness" class="col-12 flex-column">
+                <p class="h3 font-weight-bold d-lg-none Travel">آمادگی سفر</p>
+                <p class="h6 text-justify d-lg-none Travel-lorem px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی</p>
+                <button type="button" class="btn icon-travel">آماده سفر شو
+                    <span class="icon-left-arrow"></span>
+                </button>
+            </div>
+        </div>
+        <div id="box" class="row d-lg-none">
+            <div class="col-lg-12 p-5"></div>
+        </div>
+        <div id="box" class="row d-lg-none">
+            <div class="col-lg-12 p-4"></div>
         </div>
     </div>
     <script src="./js/bootstrap.min.js "></script>
