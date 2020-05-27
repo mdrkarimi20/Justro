@@ -392,27 +392,30 @@ body {
 #Wave {
     position: relative;
     width: 100%;
-    height: 180px;
+    height: 200px;
     overflow: hidden;
     .bg-wave {
+        background-image: url("./img/bg-wave.png");
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 180px;
-        background-image: url("./img/011_bg_wave.svg");
-        background-size: cover;
+        height: 200px;
+        background-size: 1500px 200px;
     }
     .bg-wave.wave1 {
-        animation: animate 20s linear infinite;
-        z-index: 100;
+        animation: animate 30s linear infinite;
+        z-index: 1000;
         opacity: 1;
         animation-delay: 0s;
         bottom: 0;
     }
     .bg-wave.wave2 {
-        animation: animate2 10s linear infinite;
-        z-index: 50;
+        animation: animate2 15s linear infinite;
+        z-index: 999;
+        opacity: 0.5;
+        animation-delay: -5s;
+        bottom: 10px;
     }
 }
 
@@ -565,7 +568,7 @@ body {
         left: 0;
         width: 100%;
         height: 180px;
-        background-image: url("./img/new-wave.jpg");
+        background-image: url("./img/bg-wave.png");
         background-size: cover;
     }
     .Bg-wave.Wave1 {
@@ -765,6 +768,263 @@ body {
         justify-content: space-between;
         font-family: shabnam-light !important;
         span {
+            font-size: 16px;
+        }
+    }
+}
+
+#Travel-readiness-web {
+    color: $color-fourthary;
+    @extend %flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url("./img/022_bg_amadegisafar.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 350px;
+    width: 100%;
+    background-size: 1920px 350px;
+    z-index: 1000;
+    .amadegisafar {
+        position: relative;
+        width: 100%;
+        .amadegisafar-end {
+            background-image: url("./img/023_amadegisafar.jpg");
+            position: absolute;
+            width: 100%;
+            height: 300px;
+            opacity: 0.5;
+            top: 10px;
+            background-size: 1200px 300px;
+        }
+    }
+    .Travel {
+        font-size: 24px;
+        text-align: center;
+        z-index: 100;
+    }
+    .Travel-lorem {
+        @extend %word;
+        z-index: 100;
+    }
+    .icon-travel {
+        width: 160px;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25), 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+        background-image: linear-gradient(to top, #e35325, #ff8a65);
+        z-index: 100;
+        color: $color-fourthary;
+        @extend %flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-family: shabnam-light !important;
+        position: relative;
+        top: 48px;
+    }
+    span {
+        font-size: 16px;
+    }
+}
+
+#end {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .better-know {
+        color: $color-primary;
+        font-size: 25px;
+        font-family: shabnam-bold;
+        text-align: center;
+    }
+    .Travel-lorem {
+        @extend %word;
+        text-align: center;
+        z-index: 100;
+        width: 360px;
+    }
+    .select-Travel {
+        @extend %flex;
+        overflow-x: scroll;
+        margin: 0 .1rem;
+        justify-content: space-evenly;
+        .tabiat {}
+        .tarikhi {}
+    }
+    .email-adress {
+        @extend %flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 464px;
+        background-color: #e1fff8;
+        .email-lorem {
+            @extend %word;
+            text-align: center;
+            width: 360px;
+        }
+        .box-email {
+            @extend %flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .email-word {
+                width: 290px;
+                height: 50px;
+                border-radius: 25px;
+                border: solid 1px #eeeeee;
+                background-color: #fafafa;
+            }
+            .email-registration {
+                width: 140px;
+                height: 50px;
+                border-radius: 25px;
+                box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+                background-image: linear-gradient(to top, #e35325, #ff8a65);
+                color: $color-fourthary;
+            }
+        }
+    }
+    .box-Travel {
+        width: 222px;
+        height: 40px;
+        background-color: $color-Fifth;
+        color: $color-tertiary;
+        opacity: 0.8;
+        border-radius: 0 0 10px 10px !important;
+        @extend %flex;
+        justify-content: center;
+        position: relative;
+        bottom: 35px;
+    }
+    img {
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:568px) {
+    #end {
+        .Travel-lorem {
+            width: 568px;
+        }
+        .email-adress {
+            .email-lorem {
+                width: 568px;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    #end {
+        .Travel-lorem {
+            width: 768px;
+        }
+        .email-adress {
+            .email-lorem {
+                width: 768px;
+            }
+        }
+    }
+}
+
+#end {
+    .Email-adress {
+        @extend %flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .Email-lorem {
+            @extend %word;
+            text-align: center;
+            width: 768px;
+        }
+        .box-Email {
+            @extend %flex;
+            justify-content: space-around;
+            position: relative;
+            .Email-word {
+                width: 290px;
+                height: 50px;
+                border-radius: 25px;
+                border: solid 1px #eeeeee;
+                background-color: #fafafa;
+                font-family: shabnam-light;
+                font-size: 14px;
+                position: absolute;
+                left: -80px;
+            }
+            .Email-registration {
+                width: 140px;
+                height: 50px;
+                border-radius: 25px;
+                box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+                background-image: linear-gradient(to top, #e35325, #ff8a65);
+                color: $color-fourthary;
+                position: absolute;
+                right: 32px;
+            }
+        }
+    }
+    .bg-end {
+        position: absolute;
+        right: 800px;
+        bottom: 215px;
+    }
+}
+
+@media (min-width:992px) {
+    #end {
+        .box-Travel {
+            width: 175px;
+            height: 40px;
+        }
+        img {
+            width: 175px;
+        }
+    }
+}
+
+#footer {
+    @extend %flex;
+    justify-content: space-evenly;
+    color: $color-fourthary;
+    .footer-bg {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    .footer-wave {
+        position: relative;
+        img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .Original-link {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        list-style-type: none;
+        .Original-link1 {
+            ul li {
+                @extend %flex;
+                justify-content: space-evenly;
+                span {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    .contact {
+        @extend %flex;
+        justify-content: space-between;
+        z-index: 100;
+        span {
+            color: $color-fourthary;
             font-size: 16px;
         }
     }

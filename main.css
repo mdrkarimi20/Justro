@@ -1,4 +1,4 @@
-#Travel-readiness .icon-travel, #Travel-readiness, #Download2 .Download-botton .download-end, #Download2 .Download2-icon, #download2 .download-end, #download2, .phone, .box-circle .circle2, #center .icon-center, #icon-slider, #word-travel, #top .download, #nav .nav-search, #nav .nav-justro, #bg, #Justro, #justro {
+#footer .contact, #footer .Original-link .Original-link1 ul li, #footer, #end .Email-adress .box-Email, #end .Email-adress, #end .box-Travel, #end .email-adress .box-email, #end .email-adress, #end .select-Travel, #end, #Travel-readiness-web .icon-travel, #Travel-readiness-web, #Travel-readiness .icon-travel, #Travel-readiness, #Download2 .Download-botton .download-end, #Download2 .Download2-icon, #download2 .download-end, #download2, .phone, .box-circle .circle2, #center .icon-center, #icon-slider, #word-travel, #top .download, #nav .nav-search, #nav .nav-justro, #bg, #Justro, #justro {
   display: flex;
   align-items: center;
 }
@@ -9,7 +9,7 @@
   color: #007f62;
 }
 
-#Travel-readiness .Travel-lorem, #Download2 .method-download, #Download2 .word-number-phone, #download2 .method-download, #download2 .word-number-phone, #word-center .lorem, #word-Travel .lorem, #word-travel .lorem {
+#end .Email-adress .Email-lorem, #end .email-adress .email-lorem, #end .Travel-lorem, #Travel-readiness-web .Travel-lorem, #Travel-readiness .Travel-lorem, #Download2 .method-download, #Download2 .word-number-phone, #download2 .method-download, #download2 .word-number-phone, #word-center .lorem, #word-Travel .lorem, #word-travel .lorem {
   font-size: 13px;
   font-weight: 300;
   line-height: 1.5;
@@ -321,28 +321,31 @@ body {
 #Wave {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: 200px;
   overflow: hidden;
 }
 #Wave .bg-wave {
+  background-image: url("./img/bg-wave.png");
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 180px;
-  background-image: url("./img/011_bg_wave.svg");
-  background-size: cover;
+  height: 200px;
+  background-size: 1500px 200px;
 }
 #Wave .bg-wave.wave1 {
-  animation: animate 20s linear infinite;
-  z-index: 100;
+  animation: animate 30s linear infinite;
+  z-index: 1000;
   opacity: 1;
   animation-delay: 0s;
   bottom: 0;
 }
 #Wave .bg-wave.wave2 {
-  animation: animate2 10s linear infinite;
-  z-index: 50;
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
 }
 
 @keyframes animate {
@@ -480,7 +483,7 @@ body {
   left: 0;
   width: 100%;
   height: 180px;
-  background-image: url("./img/new-wave.jpg");
+  background-image: url("./img/bg-wave.png");
   background-size: cover;
 }
 #Wave-center .Bg-wave.Wave1 {
@@ -667,6 +670,228 @@ body {
   font-family: shabnam-light !important;
 }
 #Travel-readiness .icon-travel span {
+  font-size: 16px;
+}
+
+#Travel-readiness-web {
+  color: #ffffff;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: url("./img/022_bg_amadegisafar.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 350px;
+  width: 100%;
+  background-size: 1920px 350px;
+  z-index: 1000;
+}
+#Travel-readiness-web .amadegisafar {
+  position: relative;
+  width: 100%;
+}
+#Travel-readiness-web .amadegisafar .amadegisafar-end {
+  background-image: url("./img/023_amadegisafar.jpg");
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  opacity: 0.5;
+  top: 10px;
+  background-size: 1200px 300px;
+}
+#Travel-readiness-web .Travel {
+  font-size: 24px;
+  text-align: center;
+  z-index: 100;
+}
+#Travel-readiness-web .Travel-lorem {
+  z-index: 100;
+}
+#Travel-readiness-web .icon-travel {
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25), 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+  z-index: 100;
+  color: #ffffff;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-family: shabnam-light !important;
+  position: relative;
+  top: 48px;
+}
+#Travel-readiness-web span {
+  font-size: 16px;
+}
+
+#end {
+  flex-direction: column;
+  justify-content: space-between;
+}
+#end .better-know {
+  color: #007f62;
+  font-size: 25px;
+  font-family: shabnam-bold;
+  text-align: center;
+}
+#end .Travel-lorem {
+  text-align: center;
+  z-index: 100;
+  width: 360px;
+}
+#end .select-Travel {
+  overflow-x: scroll;
+  margin: 0 0.1rem;
+  justify-content: space-evenly;
+}
+#end .email-adress {
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 464px;
+  background-color: #e1fff8;
+}
+#end .email-adress .email-lorem {
+  text-align: center;
+  width: 360px;
+}
+#end .email-adress .box-email {
+  flex-direction: column;
+  justify-content: space-around;
+}
+#end .email-adress .box-email .email-word {
+  width: 290px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #eeeeee;
+  background-color: #fafafa;
+}
+#end .email-adress .box-email .email-registration {
+  width: 140px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+  color: #ffffff;
+}
+#end .box-Travel {
+  width: 222px;
+  height: 40px;
+  background-color: #333333;
+  color: #f8f8f8;
+  opacity: 0.8;
+  border-radius: 0 0 10px 10px !important;
+  justify-content: center;
+  position: relative;
+  bottom: 35px;
+}
+#end img {
+  border-radius: 10px;
+}
+
+@media (min-width: 568px) {
+  #end .Travel-lorem {
+    width: 568px;
+  }
+  #end .email-adress .email-lorem {
+    width: 568px;
+  }
+}
+@media (min-width: 768px) {
+  #end .Travel-lorem {
+    width: 768px;
+  }
+  #end .email-adress .email-lorem {
+    width: 768px;
+  }
+}
+#end .Email-adress {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#end .Email-adress .Email-lorem {
+  text-align: center;
+  width: 768px;
+}
+#end .Email-adress .box-Email {
+  justify-content: space-around;
+  position: relative;
+}
+#end .Email-adress .box-Email .Email-word {
+  width: 290px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #eeeeee;
+  background-color: #fafafa;
+  font-family: shabnam-light;
+  font-size: 14px;
+  position: absolute;
+  left: -80px;
+}
+#end .Email-adress .box-Email .Email-registration {
+  width: 140px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+  color: #ffffff;
+  position: absolute;
+  right: 32px;
+}
+#end .bg-end {
+  position: absolute;
+  right: 800px;
+  bottom: 215px;
+}
+
+@media (min-width: 992px) {
+  #end .box-Travel {
+    width: 175px;
+    height: 40px;
+  }
+  #end img {
+    width: 175px;
+  }
+}
+#footer {
+  justify-content: space-evenly;
+  color: #ffffff;
+}
+#footer .footer-bg {
+  width: 100%;
+  height: 100%;
+}
+#footer .footer-bg img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#footer .footer-wave {
+  position: relative;
+}
+#footer .footer-wave img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#footer .Original-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style-type: none;
+}
+#footer .Original-link .Original-link1 ul li {
+  justify-content: space-evenly;
+}
+#footer .Original-link .Original-link1 ul li span {
+  font-size: 8px;
+}
+#footer .contact {
+  justify-content: space-between;
+  z-index: 100;
+}
+#footer .contact span {
+  color: #ffffff;
   font-size: 16px;
 }
 
