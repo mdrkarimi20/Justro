@@ -1,4 +1,4 @@
-#footer .contact, #footer .Original-link .Original-link1 ul li, #footer, #end .Email-adress .box-Email, #end .Email-adress, #end .box-Travel, #end .email-adress .box-email, #end .email-adress, #end .select-Travel, #end, #Travel-readiness-web .icon-travel, #Travel-readiness-web, #Travel-readiness .icon-travel, #Travel-readiness, #Download2 .Download-botton .download-end, #Download2 .Download2-icon, #download2 .download-end, #download2, .phone, .box-circle .circle2, #center .icon-center, #icon-slider, #word-travel, #top .download, #nav .nav-search, #nav .nav-justro, #bg, #Justro, #justro {
+#footer .footer-mob .Contact, #footer .footer-mob .link-footer .link1-footer ul li, #footer .footer-mob .link-footer .link1-footer ul, #footer .footer-mob .link-footer .link1-footer, #footer .footer-mob .link-footer, #footer .footer-mob .icon-footer .Box-circle .Circle, #footer .footer-mob .icon-footer, #footer .footer-mob, #footer, #Footer .contact, #Footer .Original-link .Original-link1 ul li, #Footer, #end .Email-adress .box-Email, #end .Email-adress, #end .box-Travel, #end .email-adress .box-email, #end .email-adress, #end .select-Travel, #end, #Travel-readiness-web .icon-travel, #Travel-readiness-web, #Travel-readiness .icon-travel, #Travel-readiness, #Download2 .Download-botton .download-end, #Download2 .Download2-icon, #download2 .download-end, #download2, .phone, .box-circle .circle2, #center .icon-center, #icon-slider, #word-travel, #top .download, #nav .nav-search, #nav .nav-justro, #bg, #Justro, #justro {
   display: flex;
   align-items: center;
 }
@@ -476,6 +476,7 @@ body {
   width: 100%;
   height: 180px;
   overflow: hidden;
+  top: 210px;
 }
 #Wave-center .Bg-wave {
   position: absolute;
@@ -740,7 +741,6 @@ body {
   width: 360px;
 }
 #end .select-Travel {
-  overflow-x: scroll;
   margin: 0 0.1rem;
   justify-content: space-evenly;
 }
@@ -748,12 +748,12 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  height: 464px;
+  height: 270px;
   background-color: #e1fff8;
 }
 #end .email-adress .email-lorem {
-  text-align: center;
-  width: 360px;
+  text-align: center !important;
+  width: 300px;
 }
 #end .email-adress .box-email {
   flex-direction: column;
@@ -765,6 +765,10 @@ body {
   border-radius: 25px;
   border: solid 1px #eeeeee;
   background-color: #fafafa;
+}
+#end .email-adress .box-email ::placeholder {
+  font-family: shabnam-light;
+  font-size: 20px;
 }
 #end .email-adress .box-email .email-registration {
   width: 140px;
@@ -789,20 +793,9 @@ body {
   border-radius: 10px;
 }
 
-@media (min-width: 568px) {
-  #end .Travel-lorem {
-    width: 568px;
-  }
-  #end .email-adress .email-lorem {
-    width: 568px;
-  }
-}
-@media (min-width: 768px) {
-  #end .Travel-lorem {
-    width: 768px;
-  }
-  #end .email-adress .email-lorem {
-    width: 768px;
+@media (max-width: 992px) {
+  #end .select-Travel {
+    overflow-x: scroll;
   }
 }
 #end .Email-adress {
@@ -853,46 +846,123 @@ body {
     width: 175px;
   }
 }
-#footer {
+#Footer {
   justify-content: space-evenly;
   color: #ffffff;
 }
-#footer .footer-bg {
+#Footer .Footer-bg {
   width: 100%;
   height: 100%;
 }
-#footer .footer-bg img {
+#Footer .Footer-bg img {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-#footer .footer-wave {
+#Footer .Footer-wave {
   position: relative;
 }
-#footer .footer-wave img {
+#Footer .Footer-wave img {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-#footer .Original-link {
+#Footer .Original-link {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   list-style-type: none;
 }
-#footer .Original-link .Original-link1 ul li {
+#Footer .Original-link .Original-link1 ul li {
   justify-content: space-evenly;
 }
-#footer .Original-link .Original-link1 ul li span {
+#Footer .Original-link .Original-link1 ul li span {
   font-size: 8px;
 }
-#footer .contact {
+#Footer .contact {
   justify-content: space-between;
   z-index: 100;
 }
-#footer .contact span {
+#Footer .contact span {
   color: #ffffff;
   font-size: 16px;
+}
+
+#footer {
+  width: 100%;
+  height: 650px;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #f8f8f8;
+}
+#footer .footer-mob {
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: url("./img/footer-mobile.jpg");
+  background-size: cover;
+}
+#footer .footer-mob .icon-footer {
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 25px;
+  overflow-x: scroll;
+  width: 100%;
+}
+#footer .footer-mob .icon-footer .Box-circle {
+  padding: 1px;
+  border-radius: 50%;
+}
+#footer .footer-mob .icon-footer .Box-circle .Circle {
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 15px 0 rgba(0, 88, 67, 0.75);
+  background-blend-mode: overlay;
+  background-image: linear-gradient(to top, #ffffff, #ffffff), linear-gradient(to bottom, #29b6f6, #29b6f6);
+}
+#footer .footer-mob .icon-footer .Box-circle .Circle span {
+  font-size: 60px;
+  opacity: 0.9;
+  color: #ffffff;
+}
+#footer .footer-mob .link-footer {
+  flex-direction: column;
+  justify-content: space-around;
+}
+#footer .footer-mob .link-footer .link1-footer {
+  justify-content: space-around;
+  font-size: 25px;
+}
+#footer .footer-mob .link-footer .link1-footer ul {
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+}
+#footer .footer-mob .link-footer .link1-footer ul li {
+  padding: 0 1rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#footer .footer-mob .link-footer .link1-footer ul li span {
+  font-size: 8px;
+  padding: 0 0.25rem;
+}
+#footer .footer-mob .Contact {
+  justify-content: space-evenly;
+  z-index: 100;
+  width: 100%;
+}
+#footer .footer-mob .Contact span {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  #footer .footer-mob .icon-footer {
+    position: relative;
+    top: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
