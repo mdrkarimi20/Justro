@@ -123,38 +123,6 @@ body {
     }
 }
 
-@media (min-width:992px) {
-    #navBar {
-        position: relative;
-        right: 130px;
-    }
-    #logo_Bg {
-        position: relative;
-        right: 25px;
-        img {
-            width: 406px;
-            height: 219px;
-        }
-    }
-}
-
-@media (min-width:1100px) {
-    #navBar {
-        position: relative;
-        right: 118px;
-    }
-    #logo_Bg {
-        margin-left: 260px;
-    }
-}
-
-@media (min-width:1200px) {
-    #navBar {
-        position: relative;
-        right: 104px;
-    }
-}
-
 #justro {
     @extend %justro;
 }
@@ -258,6 +226,30 @@ body {
     }
 }
 
+@media (min-width:1470px) {
+    #Justro {
+        right: 29px;
+    }
+}
+
+@media (min-width:1640px) {
+    #Justro {
+        right: 45px;
+    }
+}
+
+@media (min-width:1780px) {
+    #Justro {
+        right: 62px;
+    }
+}
+
+@media (min-width:1900px) {
+    #Justro {
+        right: 62px;
+    }
+}
+
 #Header {
     display: flex;
     justify-content: space-between;
@@ -288,6 +280,15 @@ body {
         box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
         background-image: linear-gradient(to top, #e35325, #ff8a65);
         color: $color-fourthary;
+    }
+}
+
+@media (min-width:568px) {
+    #top {
+        #navBar {
+            position: relative;
+            right: 44px;
+        }
     }
 }
 
@@ -696,7 +697,7 @@ body {
         border: solid 1px #eeeeee;
         background-color: #fafafa;
         position: relative;
-        left: 47px;
+        left: 42px;
     }
     .download {
         width: 140px;
@@ -948,10 +949,18 @@ body {
             }
         }
     }
+}
+
+#shap-end {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    bottom: 650px;
     .bg-end {
         position: absolute;
-        right: 800px;
-        bottom: 215px;
+        left: 0;
+        display: flex;
+        justify-content: flex-start;
     }
 }
 
@@ -1010,6 +1019,16 @@ body {
         span {
             color: $color-fourthary;
             font-size: 16px;
+        }
+    }
+}
+
+@media (min-width:1450px) {
+    .Original-link {
+        .Original-link1 {
+            ul li {
+                padding: 10px;
+            }
         }
     }
 }
